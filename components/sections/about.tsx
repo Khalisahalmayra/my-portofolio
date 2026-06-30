@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 py-20 lg:px-0">
+    <section className="mx-auto w-full max-w-6xl px-6 pt-36 pb-20 lg:px-0">
       <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-center">
         {/* Left - Image */}
         <motion.div

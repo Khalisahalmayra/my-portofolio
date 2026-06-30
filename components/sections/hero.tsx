@@ -75,7 +75,7 @@ export default function Hero() {
           className="flex w-full justify-center md:w-[42%]"
         >
           <Image
-            src="/images/hi.jpeg"
+            src="/images/hi.png"
             alt="Hero Illustration"
             width={450}
             height={450}
