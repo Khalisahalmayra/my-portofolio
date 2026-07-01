@@ -27,10 +27,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_lo2pa3a",
+        "template_8wqhfta",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "yq7m8BFAPyH80THh6"
       )
       .then(() => {
         setLoading(false);
@@ -92,7 +92,7 @@ export default function Contact() {
           <div className="mt-10 flex flex-wrap gap-5">
 
             <a
-              href="https://instagram.com/USERNAME"
+              href="https://instagram.com/khlisahalmyra"
               target="_blank"
               className="rounded-full border-2 border-[#9FC7EF] p-4 text-3xl text-[#8FC3E8] transition hover:-translate-y-2 hover:bg-[#9FC7EF] hover:text-white"
             >
@@ -100,7 +100,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/in/USERNAME"
+              href="https://linkedin.com/in/Khalisah-Ayra"
               target="_blank"
               className="rounded-full border-2 border-[#9FC7EF] p-4 text-3xl text-[#8FC3E8] transition hover:-translate-y-2 hover:bg-[#9FC7EF] hover:text-white"
             >
@@ -108,7 +108,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://github.com/USERNAME"
+              href="https://github.com/khalisahalmyra"
               target="_blank"
               className="rounded-full border-2 border-[#9FC7EF] p-4 text-3xl text-[#8FC3E8] transition hover:-translate-y-2 hover:bg-[#9FC7EF] hover:text-white"
             >

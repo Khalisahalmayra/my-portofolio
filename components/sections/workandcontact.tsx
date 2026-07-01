@@ -40,7 +40,7 @@ export default function WorkAndContact() {
           </div>
 
           <motion.a
-            href="#contact"
+            href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{

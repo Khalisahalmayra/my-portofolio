@@ -171,7 +171,7 @@ export default function Achievements() {
       <AnimatePresence>
         {selected && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-6"
+            className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/60 p-4 md:p-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -197,7 +197,7 @@ export default function Achievements() {
                 duration: 0.35,
               }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-4xl overflow-hidden rounded-[30px] bg-white"
+              className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-[30px] bg-white"
             >
               {/* Close Button */}
               <button
@@ -207,20 +207,20 @@ export default function Achievements() {
                 ×
               </button>
 
-        <div className="grid md:grid-cols-[1.3fr_1fr]">
+        <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr]">
         {/* Left */}
-        <div className="flex items-center justify-center bg-[#F8FAFC] p-6">
+        <div className="flex items-center justify-center bg-[#F8FAFC] p-4 md:p-6">
             <Image
-            src={selected.image}
-            alt={selected.title}
-            width={900}
-            height={600}
-            className="h-auto w-full rounded-2xl border border-gray-200 object-contain shadow-md"
+              src={selected.image}
+              alt={selected.title}
+              width={900}
+              height={600}
+              className="max-h-[70vh] w-full rounded-2xl border border-gray-200 object-contain shadow-md"
             />
         </div>
 
         {/* Right */}
-        <div className="flex flex-col justify-center p-10">
+        <div className="flex flex-col justify-center p-6 md:p-10">
             <h2 className="text-3xl font-extrabold text-[#1F2430]">
             {selected.title}
             </h2>
